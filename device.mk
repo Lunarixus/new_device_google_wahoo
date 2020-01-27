@@ -724,3 +724,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.postinstall:$(TARGET_COPY_OUT_PRODUCT)/etc/fstab.postinstall
+
+# IMS
+PRODUCT_PACKAGES += \
+   com.android.ims.rcsmanager \
+   RcsService \
+   PresencePolling
