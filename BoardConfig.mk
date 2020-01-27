@@ -92,6 +92,9 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+
 # Install odex files into the other system image
 BOARD_USES_SYSTEM_OTHER_ODEX := true
 
