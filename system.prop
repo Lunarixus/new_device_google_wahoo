@@ -74,3 +74,11 @@ persist.sys.wfd.virtual=0
 #ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
+
+#
+# Props to help performance
+#
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+persist.sys.ui.hw=1
+debug.egl.hw=1
