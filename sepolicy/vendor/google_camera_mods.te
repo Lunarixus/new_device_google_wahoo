@@ -1,0 +1,9 @@
+# Allow access to easel and hexagon
+allow untrusted_app qdsp_device:chr_file { ioctl open read };
+allow untrusted_app hexagon_halide_file:file { execute read open getattr };
+allow untrusted_app easel_device:chr_file { read write ioctl open getattr };
+
+# Allow access to lens calibration files
+allow untrusted_app persist_file:dir search;
+allow untrusted_app persist_sensors_file:dir search;
+allow untrusted_app persist_sensors_file:file { getattr open read };
